@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Photo Editor</title>
-</head>
-<body>
+const fileInput = document.getElementById("fileInput");
+const preview = document.getElementById("preview");
 
-<h2>Upload Your Photo</h2>
+fileInput.addEventListener("change", function() {
+  const file = this.files[0];
 
-<input type="file" id="fileInput" accept="image/*">
-<br><br>
+  if (file) {
+    const reader = new FileReader();
 
-<img id="preview" width="300"/>
+    reader.addEventListener("load", function() {
+      preview.src = this.result;
+    });
 
-<script src="script.js"></script>
-
-</body>
-</html>
+    reader.readAsDataURL(file);
+  }
+});
