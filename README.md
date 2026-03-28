@@ -5,7 +5,7 @@
 </head>
 <body style="text-align:center; font-family:sans-serif; background:#f2f2f2;">
 
-  <h1>My Photo Editing Website 😎</h1>
+  <h1>My Photo Editing Website </h1>
 
   <input type="file" id="upload" accept="image/*"><br><br>
 
