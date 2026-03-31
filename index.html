@@ -3,8 +3,31 @@
 <head>
   <title>Photo Editing</title>
 </head>
+
 <body style="text-align:center; font-family:sans-serif;">
+
   <h1>Welcome to My Photo Editing Website</h1>
-  <p>This is my first website 😎</p>
+
+  <!-- Upload -->
+  <input type="file" id="upload">
+  <br><br>
+
+  <!-- Image preview -->
+  <img id="preview" width="300">
+
+  <!-- 👇 YAHI IMAGE KE NICHE HAI -->
+  <br><br>
+
+  <button onclick="blackWhite()">Black & White</button>
+  <button onclick="normal()">Normal</button>
+
+  <br><br>
+
+  <input type="range" min="50" max="150" value="100" onchange="brightnessChange(this.value)">
+  <p>Brightness</p>
+
+  <!-- JS link -->
+  <script src="script.js"></script>
+
 </body>
 </html>
